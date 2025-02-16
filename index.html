@@ -1,46 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <body>
-        <main>
-            <article>
-                <header>
-                    <figure>
-                        <img src="#" alt="image">
-                    </figure>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-                    <h1>Simple Omelette Recipe</h1>
-                    <p></p>
+  <body>
+    <main class="flex flex-center">
+      <article class="container">
+        <!-- Recipe Image -->
+        <figure class="recipe__image_container">
+          <img
+            src="images/image-omelette.jpeg"
+            class="recipe__image"
+            alt="Simple Omelette on a plate"
+          />
+        </figure>
 
-                    <section>
-                        <h3>Preperation time</h3>
-                        <ul>
-                            <li>
+        <!-- Content Wrapper (Replaces Redundant Section) -->
+        <div class="recipe__content-box">
+          <section class="recipe__text_box">
+            <h1 class="recipe__main_title">Simple Omelette Recipe</h1>
+            <p class="recipe__text">
+              An easy and quick dish, perfect for any meal. This classic
+              omelette combines beaten eggs cooked to perfection, optionally
+              filled with your choice of cheese, vegetables, or meats.
+            </p>
+          </section>
 
-                            </li>
-                        </ul>
-                    </section>
-                </header>
+          <!-- Preparation Time -->
+          <section class="flex flex-column recipe__preparation_time">
+            <h3>Preparation time</h3>
+            <ul class="flex flex-column recipe__content_text">
+              <li>
+                <span class="recipe__text_dot">•</span>
+                <span> Total: Approximately 10 minutes </span>
+              </li>
+              <li>
+                <span class="recipe__text_dot">•</span>
+                <span> <strong>Preparation:</strong> 5 minutes </span>
+              </li>
+              <li>
+                <span class="recipe__text_dot">•</span>
+                <span><strong>Cooking:</strong> 5 minutes </span>
+              </li>
+            </ul>
+          </section>
 
-                <section>
-                    <h2>Ingredients</h2>
-                </section>
+          <!-- Ingredients -->
+          <section class="ingredients">
+            <h2 class="recipe__secondery_title">Ingredients</h2>
+            <ul class="flex flex-column recipe__content_text">
+              <li>
+                <span class="recipe__text_dot">•</span>
+                2-3 large eggs
+              </li>
+              <li>
+                <span class="recipe__text_dot">•</span>
+                Salt, to taste
+              </li>
+              <li>
+                <span class="recipe__text_dot">•</span>
+                Pepper, to taste
+              </li>
+              <li>
+                <span class="recipe__text_dot">•</span>
+                1 tbsp butter or oil
+              </li>
+              <li>
+                <span class="recipe__text_dot">•</span>
+                Optional fillings: cheese, veggies, meats
+              </li>
+            </ul>
+          </section>
 
-                <section>
-                    <h2>Instructions</h2>
-                </section>
+          <hr aria-hidden="true" />
 
-                <section>
-                    Nutrition
-                </section>
-            </article>
-        </main>
-    </body>
+          <!-- Instructions -->
+          <section class="instructions">
+            <h2 class="recipe__secondery_title">Instructions</h2>
+            <ol class="recipe__text">
+              <li>Beat the eggs with salt and pepper.</li>
+              <li>Heat the pan and add butter or oil.</li>
+              <li>Pour in the eggs and cook evenly.</li>
+              <li>Add fillings if desired.</li>
+              <li>Fold and serve hot.</li>
+            </ol>
+          </section>
 
+          <hr aria-hidden="true" />
+
+          <!-- Nutrition -->
+          <section class="nutrition">
+            <h2 class="recipe__secondery_title">Nutrition</h2>
+            <table class="recipe__text">
+              <tr>
+                <th>Calories</th>
+                <th>Carbs</th>
+                <th>Protein</th>
+                <th>Fat</th>
+              </tr>
+              <tr>
+                <td>277kcal</td>
+                <td>0g</td>
+                <td>20g</td>
+                <td>22g</td>
+              </tr>
+            </table>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>

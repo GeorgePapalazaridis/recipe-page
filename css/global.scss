@@ -1,0 +1,129 @@
+@use "_variables";
+@use "_responsiveness";
+@use "_mixins";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  max-width: none;
+  background-color: var(--color-stone-100);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-h);
+}
+
+p {
+  font-family: var(--font-family-p);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 375px;
+
+  .recipe__image_container {
+    // width: 100vw;
+
+    margin: 0;
+  }
+
+  .recipe__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .recipe__content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 32px;
+    background-color: var(--color-white);
+    gap: 32px;
+  }
+
+  .recipe__text_box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .recipe__main_title {
+    font-size: 36px;
+    line-height: 1;
+    color: var(--color-stone-900);
+  }
+
+  .recipe__secondery_title {
+    font-size: 28px;
+    color: var(--color-brown-800);
+    line-height: 1;
+    margin-bottom: 24px;
+  }
+
+  .recipe__text {
+    color: var(--color-stone-600);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .recipe__preparation_time {
+    font-family: var(--font-family-p);
+    width: 100%;
+    max-width: 311px;
+    background-color: var(--color-rose-50);
+    border-radius: 12px;
+    padding: 24px;
+    gap: 16px;
+
+    & h3 {
+      color: var(--color-rose-800);
+      font-size: 20px;
+    }
+  }
+
+  .recipe__content_text {
+    color: var(--color-stone-600);
+    line-height: 1.5;
+    font-size: 16px;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .recipe__text_dot {
+      color: var(--color-rose-800);
+      font-size: 16px;
+    }
+  }
+
+  hr {
+    width: 100%;
+    background-color: var(--color-stone-150);
+    height: 1px;
+    border: none;
+  }
+}
