@@ -1,0 +1,24 @@
+@function px-to-rem($size) {
+  $rem-size: calc($size / 16px) + rem;
+  @return $rem-size;
+}
+
+@function lighten-color($color, $percentage) {
+  @return lighten($color, $percentage);
+}
+
+@function darken-color($color, $percentage) {
+  @return darken($color, $percentage);
+}
+
+@function spacing($size) {
+  @return map-get($spacing-scale, $size);
+}
+
+@function font-size($size) {
+  @return map-get($font-sizes, $size);
+}
+
+@function aspect-ratio($width, $height) {
+  @return ($height / $width) * 100%;
+}

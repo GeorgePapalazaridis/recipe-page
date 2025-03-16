@@ -3,8 +3,8 @@
   --color-rose-800: hsl(332, 51%, 32%);
   --color-rose-50: hsl(330, 100%, 98%);
   --color-stone-900: hsl(24, 5%, 18%);
-  --color-stone-600: hsl(30, 10%, 43%);
-  --color-stone-150: #e3ddd7;
+  --color-stone-600: hsl(31, 10%, 43%);
+  --color-stone-150: hsl(32, 19%, 86%);
   --color-stone-100: hsl(30, 54%, 90%);
   --color-brown-800: hsl(14, 45%, 36%);
   --color-white: hsl(0, 0%, 100%);
@@ -26,9 +26,13 @@
 
   // Font families
   --font-family-h: "Young Serif", serif;
-  --font-family-p: "Outfit", serif;
+  --font-family-p: "Outfit", sans-serif;
 
-  --line-height: 1.5px;
+  --line-height-1: 1;
+  --line-height-2: 1.5;
 
   // Font weights
+  --font-weight-1: 400;
+  --font-weight-2: 600;
+  --font-weight-3: 700;
 }

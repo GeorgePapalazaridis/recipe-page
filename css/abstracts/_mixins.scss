@@ -1,0 +1,39 @@
+@mixin buttonStyle(
+  $backgroundColor,
+  $textColor,
+  $text,
+  $textSize,
+  $borderColor,
+  $borderRadius
+) {
+  background-color: $backgroundColor;
+  font-size: $textSize;
+  color: $textColor;
+  border: $border solid $borderColor;
+  border-radius: $borderRadius;
+}
+
+@mixin text-style($preset) {
+  font-family: map.get($preset, font-family); /* ✅ Fix for Dart Sass */
+  font-size: map.get($preset, font-size);
+  line-height: map.get($preset, line-height);
+  letter-spacing: map.get($preset, letter-spacing);
+  font-weight: map.get($preset, font-weight);
+}
+
+// _mixins.scss
+@mixin respond($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 480px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+}

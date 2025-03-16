@@ -2,8 +2,8 @@
   --color-rose-800: hsl(332, 51%, 32%);
   --color-rose-50: hsl(330, 100%, 98%);
   --color-stone-900: hsl(24, 5%, 18%);
-  --color-stone-600: hsl(30, 10%, 43%);
-  --color-stone-150: #e3ddd7;
+  --color-stone-600: hsl(31, 10%, 43%);
+  --color-stone-150: hsl(32, 19%, 86%);
   --color-stone-100: hsl(30, 54%, 90%);
   --color-brown-800: hsl(14, 45%, 36%);
   --color-white: hsl(0, 0%, 100%);
@@ -19,45 +19,52 @@
   --spacing-200: 16px;
   --spacing-150: 12px;
   --font-family-h: "Young Serif", serif;
-  --font-family-p: "Outfit", serif;
-  --line-height: 1.5px;
+  --font-family-p: "Outfit", sans-serif;
+  --line-height-1: 1;
+  --line-height-2: 1.5;
+  --font-weight-1: 400;
+  --font-weight-2: 600;
+  --font-weight-3: 700;
 }
 
-.flex {
-  display: flex;
+.text-preset-1 {
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-1);
+  line-height: var(line-height-1);
+  letter-spacing: 0px;
+  font-weight: vat(font-weight-1);
 }
 
-.flex-column {
-  flex-direction: column;
+.text-preset-2 {
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-2);
+  line-height: var(line-height-1);
+  letter-spacing: 0px;
+  font-weight: var(--font-weight-1);
 }
 
-.flex-center {
-  justify-content: center;
-  align-items: center;
+.text-preset-3 {
+  font-family: var(--font-family-p);
+  font-size: var(--font-size-3);
+  line-height: var(line-height-1);
+  letter-spacing: 0px;
+  font-weight: var(--font-weight-2);
 }
 
-.flex-text-center {
-  text-align: center;
+.text-preset-4 {
+  font-family: var(--font-family-p);
+  font-size: var(--font-size-4);
+  line-height: var(--line-height-2);
+  letter-spacing: 0px;
+  font-weight: var(--font-weight-1);
 }
 
-.align-items-start {
-  align-items: flex-start;
-}
-
-.flex-gap-small {
-  gap: var(--gap-small);
-}
-
-.flex-justify-between {
-  justify-content: space-between;
-}
-
-.flex-justify-around {
-  justify-content: space-around;
-}
-
-.flex-align-end {
-  align-items: flex-end;
+.text-preset-4-bold {
+  font-family: var(--font-family-p);
+  font-size: var(--font-size-4);
+  line-height: var(--line-height-2);
+  letter-spacing: 0px;
+  font-weight: var(--font-weight-3);
 }
 
 * {
@@ -109,6 +116,50 @@ ol li::before {
   color: var(--color-brown-800);
   font-size: 16px;
   font-weight: bold;
+}
+
+hr {
+  width: 100%;
+  background-color: var(--color-stone-150);
+  height: 1px;
+  border: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-text-center {
+  text-align: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.flex-gap-small {
+  gap: var(--gap-small);
+}
+
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+.flex-justify-around {
+  justify-content: space-around;
+}
+
+.flex-align-end {
+  align-items: flex-end;
 }
 
 .container {
@@ -187,12 +238,6 @@ ol li::before {
 .container .recipe__content_text .recipe__text_dot {
   color: var(--color-rose-800);
   font-size: 16px;
-}
-.container hr {
-  width: 100%;
-  background-color: var(--color-stone-150);
-  height: 1px;
-  border: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
