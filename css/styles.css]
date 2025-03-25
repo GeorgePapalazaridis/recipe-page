@@ -194,28 +194,17 @@ hr {
   margin-left: 8px;
 }
 .container .instructions .recipe__list {
-  margin: 0 0 0 8px;
+  list-style: none;
+  padding: 0 0 0 8px;
   counter-reset: list-counter;
   gap: 8px;
 }
 .container .instructions .recipe__listli {
   width: 16px;
 }
-.container .instructions .recipe__listli::before {
-  content: counter(list-counter) " ";
-  counter-increment: list-counter;
-  font-weight: 700;
-  color: var(--color-brown-800);
-  font-size: 16px;
-  width: 16px;
-  margin-left: 8px;
-  text-align: right;
-  position: absolute;
-  left: 0;
-}
 .container .instructions .recipe__listlistrong {
   color: var(--color-stone-600);
   font-weight: 700;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css%5D.map */
