@@ -1,0 +1,19 @@
+@media (min-width: 376px) and (max-width: 769px) {
+  body {
+    padding: 128px 48px;
+  }
+
+  .container {
+    width: 616px;
+    max-width: none; /* Ensure max-width doesn’t interfere */
+  }
+
+  .container .recipe__preparation_time {
+    max-width: none;
+  }
+
+  .container .recipe__image_container {
+    background-color: var(--color-white);
+    padding: 40px;
+  }
+}

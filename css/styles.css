@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-rose-800: hsl(332, 51%, 32%);
   --color-rose-50: hsl(330, 100%, 98%);
@@ -189,33 +190,54 @@ hr {
   gap: 16px;
 }
 .container .recipe__content_text .recipe__text_dot {
-  color: var(--color-rose-800);
+  color: var(--color-brown-800);
   width: 16px;
   margin-left: 8px;
+  font-size: 24px;
 }
 .container .instructions .recipe__list {
-  margin: 0 0 0 8px;
-  counter-reset: list-counter;
-  gap: 8px;
+  color: var(--color-stone-600);
+  list-style: none;
+  counter-reset: step;
+  padding-left: 8px;
+  gap: 16px;
 }
-.container .instructions .recipe__listli {
-  width: 16px;
+.container .instructions .recipe__list li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 1.5em;
 }
-.container .instructions .recipe__listli::before {
-  content: counter(list-counter) " ";
-  counter-increment: list-counter;
-  font-weight: 700;
-  color: var(--color-brown-800);
-  font-size: 16px;
-  width: 16px;
-  margin-left: 8px;
-  text-align: right;
+.container .instructions .recipe__list li::before {
+  content: counter(step) ".";
   position: absolute;
   left: 0;
+  top: 0;
+  font-weight: bold;
+  color: var(--color-brown-800);
+  font-size: 1rem;
+  line-height: 1.5;
 }
-.container .instructions .recipe__listlistrong {
-  color: var(--color-stone-600);
-  font-weight: 700;
+.container .instructions .recipe__list li .recipe__list--first-word {
+  font-weight: bold;
+  display: inline;
+  margin-right: 0.25em;
+}
+
+@media (min-width: 376px) and (max-width: 769px) {
+  body {
+    padding: 128px 48px;
+  }
+  .container {
+    width: 616px;
+    max-width: none; /* Ensure max-width doesn’t interfere */
+  }
+  .container .recipe__preparation_time {
+    max-width: none;
+  }
+  .container .recipe__image_container {
+    background-color: var(--color-white);
+    padding: 40px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

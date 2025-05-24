@@ -1,113 +1,116 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 375px;
+
+  .recipe__image_container {
+    // width: 100vw;
+
+    margin: 0;
+  }
+
+  .recipe__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .recipe__content-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    padding: 40px 32px;
+    background-color: var(--color-white);
+    gap: 32px;
+  }
+
+  .recipe__text_box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .recipe__main_title {
+    color: var(--color-stone-900);
+  }
+
+  .recipe__secondery_title {
+    color: var(--color-brown-800);
+    margin-bottom: 24px;
+  }
+
+  .recipe__text {
+    color: var(--color-stone-600);
+  }
+
+  .recipe__preparation_time {
     width: 100%;
-    max-width: 375px;
+    max-width: 311px;
+    background-color: var(--color-rose-50);
+    border-radius: 12px;
+    padding: 24px;
+    gap: 16px;
 
-    .recipe__image_container {
-        // width: 100vw;
+    & h3 {
+      color: var(--color-rose-800);
+    }
+  }
 
-        margin: 0;
+  .recipe__content_text {
+    color: var(--color-stone-600);
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 16px;
     }
 
-    .recipe__image {
-        display: block;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+    .recipe__text_dot {
+      color: var(--color-brown-800);
+      width: 16px;
+      margin-left: 8px;
+      font-size: 24px;
     }
+  }
 
-    .recipe__content-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 40px 32px;
-        background-color: var(--color-white);
-        gap: 32px;
-    }
+  .instructions {
+    .recipe__list {
+      color: var(--color-stone-600);
+      list-style: none;
+      counter-reset: step;
+      padding-left: 8px;
+      gap: 16px;
 
-    .recipe__text_box {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
+      li {
+        counter-increment: step;
+        position: relative;
+        padding-left: 1.5em;
 
-    .recipe__main_title {
-        color: var(--color-stone-900);
-    }
-
-    .recipe__secondery_title {
-        color: var(--color-brown-800);
-        margin-bottom: 24px;
-    }
-
-    .recipe__text {
-        color: var(--color-stone-600);
-    }
-
-    .recipe__preparation_time {
-        width: 100%;
-        max-width: 311px;
-        background-color: var(--color-rose-50);
-        border-radius: 12px;
-        padding: 24px;
-        gap: 16px;
-
-        & h3 {
-            color: var(--color-rose-800);
-        }
-    }
-
-    .recipe__content_text {
-        color: var(--color-stone-600);
-        gap: 8px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-
-        li {
-            display: flex;
-            align-items: center;
-            gap: 16px;
+        &::before {
+          content: counter(step) ".";
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-weight: bold;
+          color: var(--color-brown-800);
+          font-size: 1rem;
+          line-height: 1.5;
         }
 
-        .recipe__text_dot {
-            color: var(--color-rose-800);
-            width: 16px;
-            margin-left: 8px;
+        .recipe__list--first-word {
+          font-weight: bold;
+          display: inline;
+          margin-right: 0.25em;
         }
+      }
     }
-
-    .instructions {
-        .recipe__list {
-            list-style: none;
-            margin: 0 0 0 8px;
-            counter-reset: list-counter;
-            gap: 8px;
-
-            &li {
-                width: 16px;
-
-                &::before {
-                    content: counter(list-counter) " ";
-                    counter-increment: list-counter;
-                    font-weight: 700;
-                    color: var(--color-brown-800);
-                    font-size: 16px;
-                    width: 16px;
-                    margin-left: 8px;
-                    text-align: right;
-                    position: absolute;
-                    left: 0;
-                }
-
-                &strong {
-                    color: var(--color-stone-600);
-                    font-weight: 700;
-                }
-            }
-        }
-    }
+  }
 }
