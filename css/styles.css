@@ -264,6 +264,29 @@ hr {
     padding: 0;
     margin-top: 40px;
   }
+  .container .recipe__image {
+    border-radius: 12px;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    padding: 160px 80px;
+    background-color: var(--color-stone-100);
+  }
+  .container {
+    width: 800px;
+    max-width: none;
+    background-color: var(--color-white);
+    padding: 40px;
+    border-radius: 32px;
+  }
+  .container .recipe__preparation_time {
+    max-width: none;
+  }
+  .container .recipe__content-box {
+    padding: 0;
+    margin-top: 64px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
