@@ -284,6 +284,9 @@ hr {
   .container .recipe__preparation_time {
     max-width: none;
   }
+  .container .recipe__image {
+    border-radius: 12px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
