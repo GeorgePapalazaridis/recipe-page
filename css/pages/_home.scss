@@ -9,6 +9,7 @@
 
   .recipe__image_container {
     margin: 0;
+    padding: 0;
   }
 
   .recipe__image {
@@ -64,6 +65,7 @@
 
   .recipe__content_text {
     color: var(--color-stone-600);
+    gap: 8px;
     list-style: none;
     padding: 0;
     margin: 0;
