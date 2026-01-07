@@ -32,7 +32,7 @@
   font-size: var(--font-size-1);
   line-height: var(line-height-1);
   letter-spacing: 0px;
-  font-weight: vat(font-weight-1);
+  font-weight: vat(--font-weight-1);
 }
 
 .text-preset-2 {
