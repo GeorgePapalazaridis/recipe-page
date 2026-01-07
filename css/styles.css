@@ -148,7 +148,8 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 40px 32px;
+  padding: 0 32px;
+  margin-top: 40px;
   background-color: var(--color-white);
   gap: 32px;
 }
@@ -180,7 +181,6 @@ hr {
 }
 .container .recipe__content_text {
   color: var(--color-stone-600);
-  gap: 8px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -265,10 +265,6 @@ hr {
   .container .recipe__preparation_time {
     max-width: none;
   }
-  .container .recipe__content-box {
-    padding: 0;
-    margin-top: 24px;
-  }
   .container .recipe__image {
     border-radius: 12px;
   }
@@ -287,10 +283,6 @@ hr {
   }
   .container .recipe__preparation_time {
     max-width: none;
-  }
-  .container .recipe__content-box {
-    padding: 0;
-    margin-top: 64px;
   }
 }
 
