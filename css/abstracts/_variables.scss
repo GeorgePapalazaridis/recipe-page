@@ -1,38 +1,38 @@
 :root {
-    // Colors
-    --color-rose-800: hsl(332, 51%, 32%);
-    --color-rose-50: hsl(330, 100%, 98%);
-    --color-stone-900: hsl(24, 5%, 18%);
-    --color-stone-600: hsl(31, 10%, 43%);
-    --color-stone-150: hsl(32, 19%, 86%);
-    --color-stone-100: hsl(30, 54%, 90%);
-    --color-brown-800: hsl(14, 45%, 36%);
-    --color-white: hsl(0, 0%, 100%);
+  // Colors
+  --color-rose-800: hsl(332, 51%, 32%);
+  --color-rose-50: hsl(330, 100%, 98%);
+  --color-stone-900: hsl(24, 5%, 18%);
+  --color-stone-600: hsl(31, 10%, 43%);
+  --color-stone-150: hsl(32, 19%, 86%);
+  --color-stone-100: hsl(30, 54%, 90%);
+  --color-brown-800: hsl(14, 45%, 36%);
+  --color-white: hsl(0, 0%, 100%);
 
-    // Font sizes
-    --font-size-1: 36px;
-    --font-size-2: 28px;
-    --font-size-3: 20px;
-    --font-size-4: 16px;
+  // Font sizes
+  --font-size-1: 40px;
+  --font-size-2: 28px;
+  --font-size-3: 20px;
+  --font-size-4: 16px;
 
-    // Spacing
-    --spacing-1600: 128px;
-    --spacing-600: 48px;
-    --spacing-500: 40px;
-    --spacing-400: 32px;
-    --spacing-300: 24px;
-    --spacing-200: 16px;
-    --spacing-150: 12px;
+  // Spacing
+  --spacing-1600: 128px;
+  --spacing-600: 48px;
+  --spacing-500: 40px;
+  --spacing-400: 32px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
 
-    // Font families
-    --font-family-h: "Young Serif", serif;
-    --font-family-p: "Outfit", sans-serif;
+  // Font families
+  --font-family-h: "Young Serif", serif;
+  --font-family-p: "Outfit", sans-serif;
 
-    --line-height-1: 1;
-    --line-height-2: 1.5;
+  --line-height-1: 1;
+  --line-height-2: 1.5;
 
-    // Font weights
-    --font-weight-1: 400;
-    --font-weight-2: 600;
-    --font-weight-3: 700;
+  // Font weights
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }

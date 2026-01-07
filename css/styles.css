@@ -7,7 +7,7 @@
   --color-stone-100: hsl(30, 54%, 90%);
   --color-brown-800: hsl(14, 45%, 36%);
   --color-white: hsl(0, 0%, 100%);
-  --font-size-1: 36px;
+  --font-size-1: 40px;
   --font-size-2: 28px;
   --font-size-3: 20px;
   --font-size-4: 16px;
@@ -22,9 +22,9 @@
   --font-family-p: "Outfit", sans-serif;
   --line-height-1: 1;
   --line-height-2: 1.5;
-  --font-weight-1: 400;
-  --font-weight-2: 600;
-  --font-weight-3: 700;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }
 
 .text-preset-1 {
@@ -40,7 +40,7 @@
   font-size: var(--font-size-2);
   line-height: var(line-height-1);
   letter-spacing: 0px;
-  font-weight: var(--font-weight-1);
+  font-weight: var(--font-weight-regular);
 }
 
 .text-preset-3 {
@@ -48,7 +48,7 @@
   font-size: var(--font-size-3);
   line-height: var(line-height-1);
   letter-spacing: 0px;
-  font-weight: var(--font-weight-2);
+  font-weight: var(--font-weight-semibold);
 }
 
 .text-preset-4 {
@@ -56,7 +56,7 @@
   font-size: var(--font-size-4);
   line-height: var(--line-height-2);
   letter-spacing: 0px;
-  font-weight: var(--font-weight-1);
+  font-weight: var(--font-weight-regular);
 }
 
 .text-preset-4-bold {
@@ -64,18 +64,18 @@
   font-size: var(--font-size-4);
   line-height: var(--line-height-2);
   letter-spacing: 0px;
-  font-weight: var(--font-weight-3);
+  font-weight: var(--font-weight-bold);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-body {
-  width: 100%;
-  max-width: none;
 }
 
 hr {
@@ -127,7 +127,8 @@ hr {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 375px;
+  max-width: 736px;
+  margin: 0 auto;
 }
 .container .recipe__image_container {
   margin: 0;
@@ -155,7 +156,7 @@ hr {
 .container .recipe__main_title {
   color: var(--color-stone-900);
 }
-.container .recipe__secondery_title {
+.container .recipe__secondary_title {
   color: var(--color-brown-800);
   margin-bottom: 24px;
 }
@@ -164,7 +165,7 @@ hr {
 }
 .container .recipe__preparation_time {
   width: 100%;
-  max-width: 311px;
+  max-width: 100%;
   background-color: var(--color-rose-50);
   border-radius: 12px;
   padding: 24px;
@@ -234,7 +235,7 @@ hr {
   border-bottom: none;
 }
 .container .nutrition .nutrition__table td {
-  padding: 14px 32px;
+  padding: 14px 16px;
   font-size: 1rem;
 }
 .container .nutrition .nutrition__label {
@@ -270,11 +271,11 @@ hr {
 }
 @media (min-width: 1440px) {
   body {
-    padding: 160px 80px;
+    padding: 120px 64px;
     background-color: var(--color-stone-100);
   }
   .container {
-    width: 800px;
+    width: 736px;
     max-width: none;
     background-color: var(--color-white);
     padding: 40px;
