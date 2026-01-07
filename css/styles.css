@@ -78,6 +78,10 @@
   margin: 0;
 }
 
+figure {
+  margin: 0;
+}
+
 hr {
   width: 100%;
   background-color: var(--color-stone-150);
