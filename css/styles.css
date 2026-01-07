@@ -131,7 +131,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 736px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .container .recipe__image_container {
@@ -275,7 +275,7 @@ hr {
     background-color: var(--color-stone-100);
   }
   .container {
-    width: 736px;
+    width: 800px;
     max-width: none;
     background-color: var(--color-white);
     padding: 40px;
