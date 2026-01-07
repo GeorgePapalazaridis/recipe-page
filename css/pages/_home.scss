@@ -3,11 +3,11 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 375px;
+
+  max-width: 736px;
+  margin: 0 auto;
 
   .recipe__image_container {
-    // width: 100vw;
-
     margin: 0;
   }
 
@@ -35,28 +35,21 @@
   }
 
   .recipe__main_title {
-    font-size: 36px;
-    line-height: 1;
     color: var(--color-stone-900);
   }
 
-  .recipe__secondery_title {
-    font-size: 28px;
+  .recipe__secondary_title {
     color: var(--color-brown-800);
-    line-height: 1;
     margin-bottom: 24px;
   }
 
   .recipe__text {
     color: var(--color-stone-600);
-    font-size: 16px;
-    line-height: 1.5;
   }
 
   .recipe__preparation_time {
-    font-family: var(--font-family-p);
     width: 100%;
-    max-width: 311px;
+    max-width: 100%;
     background-color: var(--color-rose-50);
     border-radius: 12px;
     padding: 24px;
@@ -64,14 +57,11 @@
 
     & h3 {
       color: var(--color-rose-800);
-      font-size: 20px;
     }
   }
 
   .recipe__content_text {
     color: var(--color-stone-600);
-    line-height: 1.5;
-    font-size: 16px;
     gap: 8px;
     list-style: none;
     padding: 0;
@@ -84,8 +74,78 @@
     }
 
     .recipe__text_dot {
-      color: var(--color-rose-800);
-      font-size: 16px;
+      color: var(--color-brown-800);
+      width: 16px;
+      margin-left: 8px;
+      font-size: 24px;
+    }
+  }
+
+  .instructions {
+    .recipe__list {
+      color: var(--color-stone-600);
+      list-style: none;
+      counter-reset: step;
+      padding-left: 8px;
+      gap: 16px;
+
+      li {
+        counter-increment: step;
+        position: relative;
+        padding-left: 1.5em;
+
+        &::before {
+          content: counter(step) ".";
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-weight: bold;
+          color: var(--color-brown-800);
+          font-size: 1rem;
+          line-height: 1.5;
+        }
+
+        .recipe__list--first-word {
+          font-weight: bold;
+          display: inline;
+          margin-right: 0.25em;
+        }
+      }
+    }
+  }
+
+  .nutrition {
+    .nutrition__description {
+      margin-bottom: 24px;
+      color: var(--color-stone-600);
+    }
+
+    .nutrition__table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .nutrition__table tr {
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--color-stone-150);
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .nutrition__table td {
+      padding: 14px 16px;
+      font-size: 1rem;
+    }
+
+    .nutrition__label {
+      color: var(--color-stone-600);
+    }
+
+    .nutrition__value {
+      font-weight: bold;
+      color: var(--color-brown-800);
     }
   }
 }
